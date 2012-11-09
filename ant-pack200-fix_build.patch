@@ -1,0 +1,20 @@
+--- make/build.xml.orig	2010-04-25 02:44:54.000000000 +0200
++++ make/build.xml	2010-04-25 02:46:45.000000000 +0200
+@@ -6,7 +6,7 @@
+   
+   <!-- set global properties for this build -->
+   <property name="build.compiler" value="javac1.4"/>
+-  <property name="src" value="src/share"/>  
++  <property name="src" value="src"/>  
+   <property name="build" value="build"/>
+   <property name="make" value="make"/>
+   <property name="dist" value="dist"/>
+@@ -52,7 +52,7 @@
+   
+   <target name="dist" depends="compile">
+     <!-- Put everything in ${classdestdir} into the jar file -->
+-    <jar destfile="${dist}/Pack200Task.jar">
++    <jar destfile="${dist}/Pack200Task.jar" index="true" compress="true">
+ 	<zipfileset dir ="${classdestdir}"
+ 	    excludes="**/SCCS/**"
+ 	/>
