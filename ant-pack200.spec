@@ -58,3 +58,14 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,-)
 %doc doc/*
 %{_javadir}/ant/*.jar
+
+
+%changelog
+* Sat Oct 02 2010 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.0-1mdv2011.0
++ Revision: 582603
+- cosmetics
+
+  + Jonathan Bayle <mrhide@mandriva.org>
+    - import ant-pack200
+
+
