@@ -3,7 +3,7 @@
 Name:		ant-pack200
 Summary:	Java Pack200 External Task for Ant
 Version:	0.0
-Release:	%mkrel 1
+Release:	2
 Source0:	https://java-pack200-ant-task.dev.java.net/files/documents/1526/6272/ant-task.zip
 Patch0:		ant-pack200-fix_build.patch
 URL:		https://java-pack200-ant-task.dev.java.net/
